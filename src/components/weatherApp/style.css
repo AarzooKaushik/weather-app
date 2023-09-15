@@ -1,0 +1,87 @@
+.container {
+  position: relative;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.739);
+  width: 80rem;
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.weatherdetails {
+  height: 100%;
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+}
+.weatherdetails img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.datetime {
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  color: white;
+}
+.date {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.time {
+  font-size: 2rem;
+}
+.time span {
+  margin-right: 2rem;
+}
+
+.container h1 {
+  font-size: 5rem;
+  color: white;
+}
+.container video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.temperature {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: white;
+}
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+  .weatherdetails {
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 3.5rem;
+  }
+  .datetime {
+    left: 1rem;
+  }
+  .date {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .date {
+    font-size: 1.8rem;
+  }
+  .temperature {
+    font-size: 1.6rem;
+  }
+  .time {
+    font-size: 1.6rem;
+  }
+}
